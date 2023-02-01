@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        * {
+            background-attachment: fixed;
+        }
+        body {
+            background-image: linear-gradient(to right, #502000, #9C3E00);
+        }
+        header {
+            background-color: white;
+            border-radius: 8px;
+            width: 90%;
+            margin: auto;
+            padding: 0px 10px 8px 8px;
+            box-shadow: 2px 2px 4px #0000009e;
+        }
+        nav {
+            width: 100%;
+        }
+        nav > a {
+            text-decoration: none;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 1px 30px 1px 30px;
+            box-shadow: -1px 1px 1px rgb(124, 124, 124);
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        article > p {
+            text-align: justify;
+            text-indent: 30px;
+        }
+        main {
+            background-color: white;
+            width: 95%;
+            margin: 10px auto auto auto;
+            padding: 0px 10px 8px 8px;
+            box-shadow: 2px 2px 4px #0000009e;
+            border-radius: 10px 2px;
+        }
+        section#assuntos {
+            color: #00939C;
+            font-weight: bold;
+            padding-top: 1px;
+            padding-left: 7px;
+        }
+        section#assuntos > p {
+            text-align: center;
+            border: 2px dashed black;
+            padding-top: 10px;
+            height: 25px;
+            width: 150px;
+        }
+        aside > p {
+            text-align: end;
+        }
+        main > section#noticias > article > h2 {
+            text-decoration: underline;
+            background-color: rgb(213, 213, 213);
+            margin-left: -8px;
+            margin-right: -10px;
+            padding-left: 20px;
+        }
+        footer {
+            background-color: #10ABB4;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            padding: 4px;
+            margin: 5px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Site do Giuseppe</h1>
+        <nav>
+            <a target="_blank" href="https://www.instagram.com/giuseppe_zilio/">Instagram</a>
+            <a target="_blank" href="https://www.facebook.com/giuseppe.zilio.927">Facebook</a>
+            <a target="_blank" href="https://www.youtube.com/channel/UCsmvMzpPG4jnjz3X4dRIXeA">Youtube</a>
+            <a target="_blank" href="">Links</a>
+            <a target="_blank" href="">Links</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>GIUSEPPE HOJE</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre Giuseppe:</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit adipisci pariatur dolor delectus corporis eos id reiciendis et, quisquam nesciunt quis dolore? Ipsum, alias. Eveniet excepturi quibusdam cupiditate aliquid officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ab inventore nostrum sapiente accusantium debitis ex, dolore odio, soluta hic facilis repellendus ut qui possimus cumque reprehenderit maiores dignissimos excepturi.</p>
+                <aside>
+                    <p>Artigo escrito por <u>Giuseppe M. Zilio</u>.</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Giuseppe.</p>
+    </footer>
+</body>
+</html>
