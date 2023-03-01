@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança de iframes</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt porro tenetur reiciendis perspiciatis excepturi consequatur, accusamus qui unde voluptas a sed, et odit animi ipsum aliquid quasi rem exercitationem sunt.</p>
+    <iframe src="paginas-extras/pag004.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer">
+        <!-- SEGURANÇA DE IFRAMES -->
+        <!-- A configuração sandbox="sandbox" faz com que seja proibido o iframe coletar quaisquer dados que um possível navegador esteja solicitando.
+            Logo, sandbox="sandbox" é a forma mais segura de evitar coleta de dados.
+            Porém, se o intúito do iframe for coletar dados para formulários, recomenda-se o uso da configuração:
+            sandbox="allow-same-origin" para permitir conteúdo local (da mesma origem).
+            sandbox="allow-forms" para permitir formulários.
+            sandbox="allow-scripts" para permitir alguns passos do próprio formulário.
+            *** Essas configurações de sandbox podem ser atribuídas todas ao mesmo tempo como:
+            sandbox="allow-same-origin allow-forms allow-scripts"
+         -->
+         <!-- Já a configuração referrerpolicy="no-referrer-when-downgrade" é a configuração padrão.
+            Para utilizar a máxima segurança é recomendado que se use a configuração referrerpolicy="no-referrer"
+
+         -->
+        Infelizmente seu navegador não é compatível com o conteúdo.
+    </iframe>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum voluptatum dolorum, dolorem assumenda porro perferendis ducimus sunt? Hic vitae soluta quasi! Harum rerum deleniti nulla blanditiis quae, porro aperiam eos.</p>
+</body>
+</html>
